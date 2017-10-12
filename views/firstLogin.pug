@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    title Task 5.6
+    style.
+      body {background-color:lightblue;}
+      h1 h2 {color:#363670;}
+      form {background-color: #777da3;
+      width: 200px;}
+      label {color: whitesmoke}
+  body
+    h1 Welcome to our login page.
+    h2 Please sign in.
+    form(action='http://localhost:3000/auth/google')
+      br
+      label
+        b Username
+      input(type='text', placeholder='Enter Username')
+      br
+      br
+      label
+        b Password
+      input(type='password', placeholder='Enter Password')
+      br
+      br
+      button(type='submit') Login
