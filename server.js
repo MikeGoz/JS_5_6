@@ -14,7 +14,8 @@ app.all('/login', function(req, res){
   res.render('firstLogin');
 });
 app.all('/auth/google', function(req, res){
-  res.render('afterLogin');
+  var nameLogged = req.query.name;
+  res.render('afterLogin',{nameLogged});
 });
 app.use(function (req, res, next) {
     res.status(404).send('Sorry wrong request...')
